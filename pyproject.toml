@@ -1,0 +1,26 @@
+[project]
+name = "rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amansingh2507", email = "amansinghdevil64@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.1",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "langchain-text-splitters>=1.1.2",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.19.0",
+    "typesense>=1.1.0",
+]
+
+[project.scripts]
+rag = "rag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
